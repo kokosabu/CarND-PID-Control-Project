@@ -17,6 +17,17 @@ public:
   double Ki;
   double Kd;
 
+  double prev_cte;
+  bool has_prev_cte;
+#if 0
+  int mod;
+  int n;
+  int i;
+  double err;
+  double dp[3];
+  double best_err;
+#endif
+
   /*
   * Constructor
   */
