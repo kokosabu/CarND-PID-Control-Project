@@ -3,6 +3,30 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+## Reflection
+
+### Describe the effect each of the P, I, D components had in your implementation.
+
+Each error was graphed.
+
+![p_error](./data/p_error.png "p_error")
+![i_error](./data/i_error.png "i_error")
+![d_error](./data/d_error.png "d_error")
+
+p_error and d_error are around 0 and error is small.
+i_error is stable at around 200 to 600.
+
+Since it is possible to go around the course several times, I think that sufficient performance has come out.
+However, I believe that it is also desirable to stabilize the I component near zero.
+
+### Describe how the final hyperparameters were chosen.
+
+The final parameters were selected by the following method.
+First we performed manual tuning.
+Then, twiddle adjusted for adjustment.
+
+---
+
 ## Dependencies
 
 * cmake >= 3.5
