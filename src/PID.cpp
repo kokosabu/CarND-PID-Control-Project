@@ -103,6 +103,9 @@ void PID::UpdateError(double cte) {
 }
 
 double PID::TotalError() {
+#if 1
+    cout << p_error << "," << i_error << "," << d_error << endl;
+#endif
     return -Kp * p_error - Kd * d_error - Ki * i_error;
 }
 

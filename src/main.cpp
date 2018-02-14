@@ -68,13 +68,17 @@ int main()
           }
           
           // DEBUG
+#if 0
           std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
+#endif
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
           msgJson["throttle"] = 0.3;
           auto msg = "42[\"steer\"," + msgJson.dump() + "]";
+#if 0
           std::cout << msg << std::endl;
+#endif
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
         }
       } else {
